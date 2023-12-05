@@ -1,27 +1,105 @@
 :root{
     --brand-color: #FF6C00;
+    --black-color: #303030;
+    --white-color: white;
+    --subtitle-gray-color: rga(157, 164, 189, 0.60);
+    --text-font-family: "Open Sans", sans-serif;
+    --header-font-family: 'Raleway', sans-serif;
+
 }
+/*Global style */
+body {
+    font-family: var(--tesxt-font-family);
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+/* Classes */
 .social-media-link {
-    color: #303030;
+    color: var(--black-color); font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
 }
-.social-media-link:hover{
+.social-media-link:hover,
+.social-media-link:focus{
     color: var(--brand-color);
 }
 .hero-content{ /*TODO:replace with image background  */
-    background-color: #303030;
-    color: white;
+    background-color: var(--black-color);
+    color: var(--white-color)
+
 }
-.nav-about {
+.nav-link { 
+    color: var(--white-color) 
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.2px;
+} 
+.nav-link :hover,
+.nav-link:focus {
     color: var(--brand-color);
 }
-.nav-link{
-    color: white;
-} 
 .adress-phone-number{
-    color: white;
+    color: var(--white-color) 
+    font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+}
+.adress-phone-number:hover,
+.adress-phone-number:focus {
+    color: var(--brand-color);
 }
 .book-service-button{
     background-color: (rgba 0,0,0,0);
-    color: white;
+    color: var(--white-color)
     border-color: var(--brand-color);
+
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.08px;
+text-transform: uppercase;
+cursor: pointer;
+}
+book-service-button:hover,
+book-service-button:focus {
+    color: var(--brand-color);
+}
+
+.subtile {
+    font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.1px;
+text-transform: uppercase;
+}
+
+.subtitle-dar{
+    color: var(--black-color)
+}
+
+.subtitle-light{
+    color: var(--subtitle-gray-color);
+}
+
+.hero-content{
+color: var(--white-color);
+font-family: var(--header-font-family);
+font-size: 72px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 3.6px;
 }
